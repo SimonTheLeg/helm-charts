@@ -11,6 +11,10 @@ spec:
       labels:
         app: slow-app
     spec:
+      initContainers:
+        - name: delay
+          image: alpine:3.19.1
+          command: ["sleep", "{{ .Values.delay.initcontainer }}"]
       containers:
         - name: slow-app
           image: nginx:1.25.4-alpine3.18
