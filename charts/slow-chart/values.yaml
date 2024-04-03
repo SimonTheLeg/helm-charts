@@ -1,0 +1,6 @@
+delay:
+  # pre-install wait times in a valid 'sleep' interval, e.g 2, 5s, 3m
+  preinstall: 20s
+
+  # post-install wait times in a valid 'sleep' interval, e.g 2, 5s, 3m
+  postinstall: 0
