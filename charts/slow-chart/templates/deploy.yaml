@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: slow-app
+spec:
+  selector:
+    matchLabels:
+      app: slow-app
+  template:
+    metadata:
+      labels:
+        app: slow-app
+    spec:
+      containers:
+        - name: slow-app
+          image: nginx:1.25.4-alpine3.18
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 80
