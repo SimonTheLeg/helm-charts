@@ -2,14 +2,13 @@ apiVersion: v1
 entries:
   slow-chart:
   - apiVersion: v2
-    appVersion: v0.0.1
-    created: "2024-04-03T14:42:55.738902+02:00"
+    created: "2024-04-03T14:52:14.59665+02:00"
     description: Slow chart is a chart that takes a while to install. It is mainly
       used to reproduce/debug installation race conditions.
-    digest: 8667cea398eafbcba8c0b74d6656dc01a59fc1db8998d4b96cf4f03dd2ada32f
+    digest: f9c0edf5e9df4f58a854fbb645aff5bad71dd14f3007451a5f209c1decbec78c
     name: slow-chart
     type: application
     urls:
     - https://github.com/SimonTheLeg/helm-charts/releases/slow-chart-v0.0.1.tgz
     version: v0.0.1
-generated: "2024-04-03T14:42:55.738568+02:00"
+generated: "2024-04-03T14:52:14.596097+02:00"
